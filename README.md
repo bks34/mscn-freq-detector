@@ -4,23 +4,12 @@
 在固定假正率的评测设置下，比较 18 维 NSS 特征与 202 维多尺度—色度—频域融合特征，
 在 CIFAR-10（主实验）与 ImageNet 子集（验证）上评估对 L$\infty$ 与 L2 攻击的检测能力。
 
-## Citation
-
-```
-@article{aldahdooh2022review,
-  title   = {Adversarial Example Detection for DNN Models: A Review and Experimental Comparison},
-  author  = {Aldahdooh, Ahmed and Hamidouche, Wassim and Fezza, Sid Ahmed and Deforges, Olivier},
-  journal = {Artificial Intelligence Review},
-  year    = {2022}
-}
-```
-
-### Note
+## Note
 
 代码结构参考了综述论文的官方实现 [detectors_review](https://github.com/aldahdooh/detectors_review)，
 MSCN 特征实现参考了 NSS 原始工作 [Kherchouche et al., IJCNN 2020](https://hal.archives-ouvertes.fr/hal-03003468)。
 
-### Requirement
+## Requirement
 
 1. Python 3.12
 2. PyTorch 2.15（CUDA 13.2）
@@ -31,7 +20,7 @@ MSCN 特征实现参考了 NSS 原始工作 [Kherchouche et al., IJCNN 2020](htt
 uv sync          # 或 pip install -e .
 ```
 
-### setup_paths
+## setup_paths
 
 `setup_paths.py` 集中管理路径、数据集、攻击列表、特征配置与评测参数（FPR、划分比例、随机种子）。
 所有路径均为项目内相对路径，无需修改。
