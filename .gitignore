@@ -3,6 +3,7 @@ adv_data/*.npy
 _archive/
 checkpoints/*.pt
 data/
+EXPERIMENTS.md
 figures/
 .idea/
 *.pyc

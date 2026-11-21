@@ -107,7 +107,6 @@ bash run_cifar.sh        # CIFAR-10 全流程（约 30 分钟）
 bash run_imagenet.sh     # ImageNet 验证（约 35 分钟）
 ```
 
-完整实验数据见 [EXPERIMENTS.md](EXPERIMENTS.md)。
 
 所有输入与输出（`data/`、`adv_data/`、`results/`、`checkpoints/`、`figures/`）都在本目录内，
 不需要外部路径；只有 ImageNet 预训练权重会由 torchvision 下载到 `~/.cache/torch/`。
@@ -136,7 +135,6 @@ code-pytorch/
 ├── detect_fusion.py          # Fusion-202 检测器
 ├── collect_results.py        # 汇总 CSV
 ├── run_cifar.sh / run_imagenet.sh
-├── EXPERIMENTS.md            # 实验数据
 ├── figures/                  # make_figures.py 的输出
 └── data/ adv_data/ results/ checkpoints/
 ```
