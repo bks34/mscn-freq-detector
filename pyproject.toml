@@ -1,0 +1,31 @@
+[project]
+name = "mscn-freq-detector"
+version = "0.1.0"
+description = "MSCN + frequency-domain fusion detector for adversarial examples (PyTorch re-implementation, course project)"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "torch>=2.2",
+    "torchvision>=0.17",
+    "torchattacks>=3.5",
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "scikit-learn>=1.3",
+    "PyWavelets>=1.4",
+    "Pillow>=10.0",
+    "tqdm>=4.66",
+    "pyarrow>=14.0",
+    "matplotlib>=3.7",
+]
+
+
+[tool.uv]
+# 若只想用 CPU 版 torch（不需要 CUDA），取消下面两行注释可把下载量从 ~2GB 降到 ~200MB：
+# [[tool.uv.index]]
+# name = "pytorch-cpu"
+# url = "https://download.pytorch.org/whl/cpu"
+# explicit = true
+#
+# [tool.uv.sources]
+# torch = { index = "pytorch-cpu" }
+# torchvision = { index = "pytorch-cpu" }

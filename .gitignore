@@ -1,0 +1,16 @@
+adv_data/*.json
+adv_data/*.npy
+_archive/
+checkpoints/*.pt
+data/
+figures/
+.idea/
+*.pyc
+__pycache__/
+rerun.log
+results/
+.uv-cache/
+.uv-python/
+.venv/
+.venv-test/
+.vscode/
